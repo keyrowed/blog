@@ -1,0 +1,9 @@
+name = "blog"
+compatibility_date = "2025-09-14"
+
+[assets]
+directory = "./public"
+
+routes = [
+  { pattern = "blog.keyrow.dev", custom_domain = true }
+]

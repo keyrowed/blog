@@ -1,7 +1,22 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="title">
-  Hello! I'm keyrow 👋
+<h1>
+  Hello!
 </h1>
+<p>Welcome to my blog!</p>
+
+{{ section.content | safe }}
+
+<ul>
+  {% if paginator %}
+    {% for page in paginator.pages %}
+      <li>
+        <strong>{{ page.date }}</strong>
+        <a href={{ page.permalink }}>{{ page.title }}</a>
+      </li>
+    {% endfor %}
+  {% endif %}
+</ul>
+
 {% endblock content %}

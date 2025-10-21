@@ -1,0 +1,4 @@
++++
+title = "Thoughts"
+transparent = true
++++

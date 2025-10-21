@@ -1,11 +1,13 @@
 base_url = "https://blog.keyrow.dev"
-title = "keyrow's Blog"
+title = "keyrow's blog"
 description = ""
 
 compile_sass = true
 build_search_index = true
 generate_feeds = true
 generate_sitemap = true
+
+author = "keyrow"
 
 [markdown]
 # Whether to do syntax highlighting
